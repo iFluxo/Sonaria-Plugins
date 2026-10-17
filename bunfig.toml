@@ -1,0 +1,4 @@
+# Keep the classic hoisted layout (same shape npm produces) so the workspace
+# resolves `sonaria` for the package sources and node_modules/.bin is populated.
+[install]
+linker = "hoisted"

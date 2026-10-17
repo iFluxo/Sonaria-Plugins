@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": false,
+    // The published output is consumed through dist, so no workspace aliases.
+    "paths": {},
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": false,
+    "declarationMap": false
+  },
+  "include": ["src/**/*.ts"]
+}

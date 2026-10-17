@@ -1,0 +1,26 @@
+{
+  "name": "sonaria-plugins",
+  "version": "0.1.0",
+  "description": "Official-style plugin suite for Sonaria: Deezer, YouTube, SoundCloud, Spotify and Apple Music extractors with mirror fallback.",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "bun test",
+    "build": "bun run --filter '*' build"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.3",
+    "seyfert": "^5.1.0",
+    "typescript": "^7.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "sonaria": ">=0"
+  }
+}
